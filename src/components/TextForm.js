@@ -62,11 +62,11 @@ export default function TextForm(props) {
             <label forHtml="myBox" className="form-label"></label>
             <textarea className="form-control" value={text} onChange={handleOnChange}  id="myBox" rows="14" style={{backgroundColor: props.mode === 'dark' ? '#13466e' : 'white',color: props.mode === 'dark' ? 'white' : '#042743',}}></textarea>
         </div>
-        <button className="btn btn-primary mx-1 my-1" onClick={handleUpClick} >to UpperCase</button>
-        <button className="btn btn-primary mx-1 my-1" onClick={handleLoClick} >to LowerCase</button>
-        <button className="btn btn-primary mx-1 my-1" onClick={handleClear} >Clear text</button>
-        <button className="btn btn-primary mx-1 my-1" onClick={handleCopy} >Copy</button>
-        <button className="btn btn-primary mx-1 my-1" onClick={handleExtraSpace} >Remove extra spaces</button>
+        <button className="btn btn-primary mx-1 my-2" onClick={handleUpClick} >to UpperCase</button>
+        <button className="btn btn-primary mx-1 my-2" onClick={handleLoClick} >to LowerCase</button>
+        <button className="btn btn-primary mx-1 my-2" onClick={handleClear} >Clear text</button>
+        <button className="btn btn-primary mx-1 my-2" onClick={handleCopy} >Copy</button>
+        <button className="btn btn-primary mx-1 my-2" onClick={handleExtraSpace} >Remove extra spaces</button>
         <button type="submit" className="btn btn-primary my-1 mx-1" onClick={speak} >Speak</button>
 
     </div>
